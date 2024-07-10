@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.contenedor {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 80px;
+    box-shadow: 0 30px 10px #ccc,
+    0 30px 30px rgba(0,0,0,0.25),
+    0 28px 0 rgba(0,0,0,0.5);
+}
+
+.safari {
+    position: absolute;
+    inset: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(76, 141, 202), rgb(69, 38, 241));
+    box-shadow: 0 -5px rgba(0,0,0,0.1);
+}
+
+.safari span {
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background: #fff;
+    transform: translateY(-137.55px) rotate(calc(10deg * var(--i)));
+    transform-origin: 1px 150px;
+    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.15));
+}
+
+.safari span::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background: #fff;
+    transform-origin: 0 150px;
+    transform: rotate(5deg);
+}
+
+.manecilla {
+    position: absolute;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    inset: 60px;
+    left: calc(40% + 20px);
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.25));
+    transition: transform 2s ease-in-out;
+}
+.manecilla:hover{
+    transform: rotate(360deg);
+}
+
+.manecilla::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    height: 150px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 150px solid #fb3b2e;
+}
+
+.manecilla::after {
+    content: '';
+    position: absolute;
+    top: 150px;
+    height: 150px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 150px solid #fff;
+}
+
+

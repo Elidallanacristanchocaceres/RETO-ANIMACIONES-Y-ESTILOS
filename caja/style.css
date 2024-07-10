@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(199, 24, 68);
+}
+.contenedor {
+    width: 50%;
+    margin: 0 auto;
+}
+details {
+    border: 2px solid white;
+    margin-bottom: 10px;
+    border: 5px;
+    background-color: white;
+    padding: 10px;
+}
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(4, 140, 219);
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    margin: -10px -10px 10px -10px;
+}
+
+summary::after {
+    content: "►"; 
+    font-size: 20px;
+    transform: rotate(90deg);
+    margin-left: auto;
+}
+
